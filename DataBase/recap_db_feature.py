@@ -1,5 +1,5 @@
 dico = {"bookID" : ["drop"],
-"title": ["natural_languge", "length", "nword", "drop"],
+"title": ["length", "nword", "drop"],
 "authors" : ["drop"],
 "average_rating" : ["Keep"],
 "isbn" : ["drop"],

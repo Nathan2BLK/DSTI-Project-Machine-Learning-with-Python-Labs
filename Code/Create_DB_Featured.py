@@ -2,7 +2,6 @@ import pandas as pd
 from datetime import datetime
 import os
 import subprocess
-import isbnlib
 import spacy
 
                                                             
@@ -72,39 +71,22 @@ with open(r'DataBase\Extract_ML_DB\DB_notice.txt', 'w') as file:
                                                         
                                                         elif t[index] == "month":
                                                             df[index_name[index]] = df[index_name[index]].str.split('/').str[0]
+                                                            df = df.drop(index_name[index], axis=1)
                                                         
                                                         elif t[index] == "day":
                                                             df[index_name[index]] = df[index_name[index]].str.split('/').str[1]
+                                                            df = df.drop(index_name[index], axis=1)
 
                                                         elif t[index] == "year":
                                                             df[index_name[index]] = df[index_name[index]].str.split('/').str[2]
-
-                                                            #for z, date_str in enumerate(df[index_name[index]]):
-                                                            #    try:
-                                                            #        df.loc[z, index_name[index]] = pd.to_datetime(date_str, format='%m/%d/%Y')
-                                                            #    except ValueError as v:
-                                                            #        file.write(f"Error in row {z + 1} and feature {index_name[index]}, the row is deleted. \nERROR:{v}")
+                                                            df = df.drop(index_name[index], axis=1)
                                                         
                                                         elif t[index] == "age":
                                                             df['publication_date'] = pd.to_datetime(df['publication_date'], errors='coerce')
                                                             # Supprimer les lignes avec des dates de publication invalides
                                                             df = df.dropna(subset=['publication_date'])
-                                                                
                                                             df['age'] = (date_actuelle - df['publication_date']).dt.days // 365
                                                         
-                                                        elif t[index] == "natural_languge":
-                                                            # Charger le modèle SpaCy pré-entraîné
-                                                            nlp = spacy.load("en_core_web_sm")
-
-                                                            # Fonction pour extraire les entités nommées d'un titre
-                                                            def extract_entities(title):
-                                                                doc = nlp(title)
-                                                                entities = [(ent.text, ent.label_) for ent in doc.ents]
-                                                                return entities
-
-                                                            # Appliquer la fonction à votre ensemble de données
-                                                            df['title_entities'] = df['title'].apply(extract_entities)
-                                                            
                                                           
                                                     df.to_csv(f"{path}\\DB_{n_db}.csv", index=False)
 
