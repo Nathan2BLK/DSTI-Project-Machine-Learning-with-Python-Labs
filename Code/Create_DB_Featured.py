@@ -37,8 +37,11 @@ with open(r'DataBase\Extract_ML_DB\DB_notice.txt', 'w') as file:
                                                     
                                                     for feature_index in range(len(index_name)):
                                                         file.write(f'   {index_name[feature_index]}: {t[feature_index]},\n')
-
                                                     
+                                                    file.write('\n\n\n')
+                                                    
+                                                    path = r"DataBase\\Extract_ML_DB"
+
                                                     df = pd.read_csv(r'DataBase\books.csv')
                                                     
                                                     for index in range(len(t)):
@@ -101,15 +104,8 @@ with open(r'DataBase\Extract_ML_DB\DB_notice.txt', 'w') as file:
 
                                                             # Appliquer la fonction à votre ensemble de données
                                                             df['title_entities'] = df['title'].apply(extract_entities)
-                                                            for index, raw in df.iterrows():
                                                             
-                                                            ####    not finished   ####
                                                           
-
-                                                        
-
-                                                    file.write('\n\n\n')
-                                                    path = r"DataBase\\Extract_ML_DB"
                                                     df.to_csv(f"{path}\\DB_{n_db}.csv", index=False)
 
 
