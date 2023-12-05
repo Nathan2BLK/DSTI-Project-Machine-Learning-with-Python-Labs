@@ -1,4 +1,4 @@
-bookID,title,authors,average_rating,isbn,isbn13,language_code,num_pages,ratings_count,text_reviews_count,publication_date,publisher
+bookID,title,authors,average_rating,isbn,isbn13,language_code,  num_pages,ratings_count,text_reviews_count,publication_date,publisher
 1,Harry Potter and the Half-Blood Prince (Harry Potter  #6),J.K. Rowling/Mary GrandPré,4.57,0439785960,9780439785969,eng,652,2095690,27591,9/16/2006,Scholastic Inc.
 2,Harry Potter and the Order of the Phoenix (Harry Potter  #5),J.K. Rowling/Mary GrandPré,4.49,0439358078,9780439358071,eng,870,2153167,29221,9/1/2004,Scholastic Inc.
 4,Harry Potter and the Chamber of Secrets (Harry Potter  #2),J.K. Rowling,4.42,0439554896,9780439554893,eng,352,6333,244,11/1/2003,Scholastic
@@ -3347,7 +3347,7 @@ bookID,title,authors,average_rating,isbn,isbn13,language_code,num_pages,ratings_
 12216,Three Plays: Desire Under the Elms / Strange Interlude / Mourning Becomes Electra,Eugene O'Neill/Luann Walther,4.08,0679763961,9780679763963,eng,424,1596,36,10/31/1995,Vintage
 12220,A Streetcar Named Desire,Tennessee Williams,3.98,0822210894,9780822210894,eng,107,235224,2409,12/1/1952,Dramatists Play Service
 12222,A Streetcar Named Desire,Tennessee Williams/Arthur  Miller,3.98,0811216020,9780811216029,en-US,192,3458,337,9/17/2004,New Directions
-12224,Streetcar Suburbs: The Process of Growth in Boston  1870-1900,Sam Bass Warner/ Jr.Sam B. Warner,3.58,0674842111,9780674842113,en-US,236,61,6,4/20/2004,Harvard University Press
+12224,Streetcar Suburbs: The Process of Growth in Boston  1870-1900,Sam Bass Warner Jr./Sam B. Warner,3.58,0674842111,9780674842113,en-US,236,61,6,4/20/2004,Harvard University Press
 12225,A Streetcar Named Desire (SparkNotes Literature Guide),SparkNotes,3.29,1586634496,9781586634490,eng,96,0,0,7/15/2002,SparkNotes
 12226,CliffNotes on Williams' Glass Menagerie & Streetcar Named Desire (Cliffs Notes),James Lamar Roberts/Tennessee Williams/CliffsNotes,3.70,0822005336,9780822005339,en-GB,88,10,0,1/5/1965,Cliffs Notes
 12230,Pygmalion,George Bernard Shaw/Dan H. Laurence/Nicholas Grene,3.90,0141439505,9780141439501,eng,122,2085,179,1/30/2003,Penguin Books
