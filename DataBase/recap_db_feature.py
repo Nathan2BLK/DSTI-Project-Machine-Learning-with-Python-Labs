@@ -1,20 +1,25 @@
-import pandas as pd
-import glob
-import os
-import subprocess
+dico = {"bookID" : ["drop"],
+"title": ["natural_languge", "length", "nword", "drop"],
+"authors" : ["drop"],
+"average_rating" : ["Keep"],
+"isbn" : ["drop"],
+"isbn13" : ["isbn_country", "drop"],  
+"language_code" : ["vector", "drop"],
+"num_pages" : ["Keep"],
+"ratings_count" : ["Keep"],
+"text_reviews_count" : ["Keep"],
+"publication_date" : ["day", "month", "year", "general", "drop", "age"],
+"publisher" : ["drop"]}
 
 
+t = []
+n = 0
+for feature in dico:
+    t.append([])
+    for values in dico[feature]:
+        t[n].append(values)
+    n += 1
+print(t)
 
-folder_path = r"C:\Users\natha\OneDrive\Documents\CIV-SurfaceProNDB\SCHOOL\DSTI\Cours\Python Labs\-DSTI-Project-Machine-Learning-with-Python-Labs\DataBase\Extract_ML_DB"
-csv_files = glob.glob(os.path.join(folder_path, '*.csv'))
-
-# Iterate through every file in the folder
-for csv_file in csv_files:
-    # Read the CSV file using pandas
-    df = pd.read_csv(csv_file)
-    print(str(csv_file).split('\\')[-1])
-    cor = df.corr()
-    print(cor['average_rating'])
-    
 
     
