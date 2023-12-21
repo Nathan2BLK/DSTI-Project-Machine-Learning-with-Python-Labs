@@ -1,6 +1,47 @@
 {
-  "todo": [],
-  "in-progress": [],
+  "todo": [
+    {
+      "category": "IMPLEMENT",
+      "creation_time": "2023-12-21T13:17:11.828Z",
+      "description": {
+        "content": "- Need to find the best couple (Data Set / ML model)\n- Find an explaination by looking at the Data and the model\n- Puting every couple in front of each other and comparing",
+        "mime": "text/markdown"
+      },
+      "id": "3",
+      "prio": 3,
+      "references": [],
+      "title": "Evaluation of the different ML model and Data Set used /  Best ONE?"
+    },
+    {
+      "category": "IMPLEMENT",
+      "creation_time": "2023-12-21T13:10:00.132Z",
+      "description": {
+        "content": "- Choosing good ML model according to our Data Sets\n- Trying them and retreive the result\n- Shape the result data for allowing the evaluation part of the different model\n- (Provide to them team that will dev the evaluation part a sample of the result)",
+        "mime": "text/markdown"
+      },
+      "id": "2",
+      "prio": 3,
+      "references": [],
+      "title": "Search and implement training of different ML model over the all given Data Set"
+    }
+  ],
+  "in-progress": [
+    {
+      "assignedTo": {
+        "name": "Nathan De Blecker"
+      },
+      "category": "IMPLEMENT",
+      "creation_time": "2023-12-21T12:56:10.238Z",
+      "description": {
+        "content": "Research, implement and create correct CSV Data Base featured with a mix of choosen features.",
+        "mime": "text/markdown"
+      },
+      "id": "1",
+      "prio": 3,
+      "references": [],
+      "title": "Create the generative modifying Data Base Script"
+    }
+  ],
   "testing": [],
   "done": []
 }
