@@ -1,0 +1,16 @@
+DATA BASE Iteration N1:
+   bookID: drop,
+   title: natural_languge,
+   authors: drop,
+   average_rating: Keep,
+   isbn: drop,
+   isbn13: isbn_country,
+   language_code: vector,
+   num_pages: Keep,
+   ratings_count: Keep,
+   text_reviews_count: Keep,
+   publication_date: day,
+   publisher: drop,
+
+
+
