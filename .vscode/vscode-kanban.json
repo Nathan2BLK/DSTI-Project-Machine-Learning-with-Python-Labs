@@ -23,6 +23,17 @@
       "prio": 3,
       "references": [],
       "title": "Search and implement training of different ML model over the all given Data Set"
+    },
+    {
+      "assignedTo": {
+        "name": "Nathan DE BLECKER"
+      },
+      "category": "SEARCH",
+      "creation_time": "2024-01-22T15:09:08.339Z",
+      "id": "4",
+      "prio": 1,
+      "references": [],
+      "title": "Finding New Data providers for obtaining the style and type"
     }
   ],
   "in-progress": [
