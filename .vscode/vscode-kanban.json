@@ -4,7 +4,7 @@
       "category": "IMPLEMENT",
       "creation_time": "2023-12-21T13:17:11.828Z",
       "description": {
-        "content": "- Need to find the best couple (Data Set / ML model)\n- Find an explaination by looking at the Data and the model\n- Puting every couple in front of each other and comparing",
+        "content": "- Need to find the best couple (Data Set / ML model)\n- Find an explaination by looking at the Data and the model\n- Puting every couple in front of each other and comparing\n- Separating the Different result by DataSET featured or not ",
         "mime": "text/markdown"
       },
       "id": "3",
