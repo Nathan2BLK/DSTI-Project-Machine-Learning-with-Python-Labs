@@ -2,18 +2,6 @@
   "todo": [
     {
       "category": "IMPLEMENT",
-      "creation_time": "2023-12-21T13:17:11.828Z",
-      "description": {
-        "content": "- Need to find the best couple (Data Set / ML model)\n- Find an explaination by looking at the Data and the model\n- Puting every couple in front of each other and comparing\n- Separating the Different result by DataSET featured or not ",
-        "mime": "text/markdown"
-      },
-      "id": "3",
-      "prio": 3,
-      "references": [],
-      "title": "Evaluation of the different ML model and Data Set used /  Best ONE?"
-    },
-    {
-      "category": "IMPLEMENT",
       "creation_time": "2023-12-21T13:10:00.132Z",
       "description": {
         "content": "- Choosing good ML model according to our Data Sets\n- Trying them and retreive the result\n- Shape the result data for allowing the evaluation part of the different model\n- (Provide to them team that will dev the evaluation part a sample of the result)",
@@ -34,6 +22,18 @@
       "prio": 1,
       "references": [],
       "title": "Finding New Data providers for obtaining the style and type"
+    },
+    {
+      "category": "IMPLEMENT",
+      "creation_time": "2023-12-21T13:17:11.828Z",
+      "description": {
+        "content": "- Need to find the best couple (Data Set / ML model)\n- Find an explaination by looking at the Data and the model\n- Puting every couple in front of each other and comparing\n- Separating the Different result by DataSET featured or not ",
+        "mime": "text/markdown"
+      },
+      "id": "3",
+      "prio": 3,
+      "references": [],
+      "title": "Evaluation of the different ML model and Data Set used /  Best ONE?"
     }
   ],
   "in-progress": [
