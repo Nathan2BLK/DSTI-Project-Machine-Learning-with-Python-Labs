@@ -7,28 +7,28 @@ import spacy
                                                             
 
 # Specify the path to the Python script and the folder containing it
-feature_script_path = r"DataBase\recap_db_feature.py"
+feature_script_path = r"First Solution\Feature\recap_db_feature.py"
 
 # Use subprocess to run the script
 result = subprocess.check_output(['python', feature_script_path])
 result_list = eval(result)
 date_actuelle = datetime.now()
 
-feat = result_list
+feature = result_list
 with open(r'DataBase\Extract_ML_DB\DB_notice.txt', 'w') as file:
     n_db=0
-    for a in feat[0]:
-        for b in feat[1]:
-            for c in feat[2]:
-                for d in feat[3]:
-                    for e in feat[4]:
-                        for f in feat[5]:
-                            for g in feat[6]:
-                                for h in feat[7]:
-                                    for i in feat[8]:
-                                        for j in feat[9]:
-                                            for k in feat[10]:
-                                                for l in feat[11]:
+    for a in feature[0]:
+        for b in feature[1]:
+            for c in feature[2]:
+                for d in feature[3]:
+                    for e in feature[4]:
+                        for f in feature[5]:
+                            for g in feature[6]:
+                                for h in feature[7]:
+                                    for i in feature[8]:
+                                        for j in feature[9]:
+                                            for k in feature[10]:
+                                                for l in feature[11]:
                                                     n_db += 1
                                                     t = [a,b,c,d,e,f,g,h,i,j,k,l]
                                                     index_name = ["bookID","title","authors","average_rating","isbn","isbn13", "language_code","num_pages", "ratings_count", "text_reviews_count", "publication_date", "publisher"]
@@ -51,7 +51,7 @@ with open(r'DataBase\Extract_ML_DB\DB_notice.txt', 'w') as file:
                                                             df[f"{index_name[index]}_length"] = df[index_name[index]].str.len()
                                                             df = df.drop(index_name[index], axis=1)
                                                         
-                                                        elif t[index] == "nword":
+                                                        elif t[index] == "num_word":
                                                             def count_words(text):
                                                                 words = text.split()
                                                                 return len(words)
