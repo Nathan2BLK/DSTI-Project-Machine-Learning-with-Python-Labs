@@ -6,7 +6,7 @@ dico = {"bookID" : ["drop"],
 "isbn13" : ["isbn_country", "drop"],  
 "language_code" : ["vector", "drop"],
 "num_pages" : ["Keep"],
-"ratings_count" : ["Keep"],
+"ratings_count" : [], #, "min_number_1", "min_number_?"
 "text_reviews_count" : ["Keep"],
 "publication_date" : ["day", "month", "year", "general", "drop", "age"],
 "publisher" : ["drop"]}
