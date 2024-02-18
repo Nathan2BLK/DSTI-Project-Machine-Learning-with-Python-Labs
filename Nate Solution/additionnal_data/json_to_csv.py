@@ -2,15 +2,15 @@ import csv
 import json
 
 # Define the input and output file paths
-input_file = r"Nate Solution\additionnal_data\goodreads_book_authors.json"
-output_file = r"Nate Solution\additionnal_data\author_info.csv"
+input_file = r"Nate Solution\additionnal_data\goodreads_books.json"
+output_file = r"Nate Solution\additionnal_data\books_info.csv"
 
-# Read JSON data
+# Define the columns you want to select
+selected_columns = ["book_id", "country_code", "authors", "isbn13"]
+
 with open(input_file, "r") as f_input, open(output_file, "w", newline="") as f_output:
-    # Define field names
-    field_names_author = ["average_rating", "author_id", "text_reviews_count", "name", "ratings_count"]
-
-    writer = csv.DictWriter(f_output, fieldnames=field_names_author)
+    # Create CSV writer
+    writer = csv.DictWriter(f_output, fieldnames=selected_columns)
     writer.writeheader()
 
     # Read JSON data line by line
@@ -18,5 +18,8 @@ with open(input_file, "r") as f_input, open(output_file, "w", newline="") as f_o
         # Parse JSON object from each line
         data = json.loads(line)
         
-        # Write parsed data to CSV
-        writer.writerow(data)
+        # Filter the data to include only selected columns
+        selected_data = {key: data[key] for key in selected_columns if key in data}
+        
+        # Write selected data to CSV
+        writer.writerow(selected_data)
