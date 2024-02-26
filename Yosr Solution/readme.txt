@@ -32,3 +32,10 @@ advantages such as high speed, lower memory usage, and scalability.
 Its ability to handle categorical features without requiring one-hot 
 encoding and its optimization techniques, such as leaf-wise tree growth,
 make it particularly suitable for our ratings book prediction task.
+
+Feature engineering notebook 
+
+When dealing with a large number of unique genres (1620 in our case), one-hot encoding can lead to a high-dimensional and sparse feature space.
+Label encoding, may introduce a false ordinal relationship between genres, which is not desirable. 
+Instead of using label encoding, we can encode each genre based on its frequency in the dataset. This can provide a meaningful representation, 
+indicating how common or rare each genre is. 
