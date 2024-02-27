@@ -1,7 +1,7 @@
 import pandas
 import ast
 
-final_df = pandas.read_csv(r"Nate Solution\additionnal_data\improved_dataset.csv")
+final_df = pandas.read_csv(r"Nate Solution\DataBase\improved_dataset.csv")
 df_author = pandas.read_csv(r"Nate Solution\additionnal_data\author_info.csv")
 
 def parse_list(s):
@@ -35,4 +35,4 @@ final_df['authors_y'] = final_df['authors_y'].apply(lambda row: weighted_avg(row
 final_df.rename(columns={'authors_y': 'author_mean_rates'}, inplace=True)
 final_df.rename(columns={'authors_x': 'authors'}, inplace=True)
 
-final_df.to_csv(r"Nate Solution\additionnal_data\improved_dataset.csv", index=False)
+final_df.to_csv(r"Nate Solution\DataBase\improved_dataset.csv", index=False)
