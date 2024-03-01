@@ -26,7 +26,6 @@ if __name__ == "__main__":
     # Add arguments for input and output file paths
     parser.add_argument('final_df', help='Path to the improved_dataframe.csv')
     parser.add_argument('df_author', help='Path to the author_info.csv')
-    parser.add_argument('save_path', help='Path to save the updated DataFrame')
     
     # Parse command-line arguments
     args = parser.parse_args()
@@ -43,4 +42,4 @@ if __name__ == "__main__":
     final_df.rename(columns={'authors_x': 'authors'}, inplace=True)
 
     # Save the updated DataFrame to a CSV file
-    final_df.to_csv(args.save_path, index=False)
+    final_df.to_csv(args.final_df, index=False)
